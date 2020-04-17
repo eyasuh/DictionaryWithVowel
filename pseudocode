@@ -1,0 +1,32 @@
+****************************Pseudocode***********************************
+
+Import the scanner class.
+Create scanner object and assign it to input var.
+Prompt user for 10 words separated by space
+Store the input in a string variable.
+Then split the string with regular expresion " " and store it in a string array.
+Use Bubble sort
+    create a for loop to iterate through the string array
+        creat an inner for loop to compare the next array
+            use an if statement to compare two strings
+            swap if true
+        iterate till the array end
+     repeat till no more to swap
+Print out the result
+    use for loop to iterate and print out the array in order
+
+Print array in reversed order
+    use for loop to iterate from the end of the array to the start
+
+*************************** Test Cases **********************************
+Original order:
+kiwi pineapple apple banana orange grapes watermelon dog ear day
+
+Alphabetical Order:
+apple banana day dog ear grapes kiwi orange pineapple watermelon
+
+Reversed Alphabetical Order:
+watermelon pineapple orange kiwi grapes ear dog day banana apple
+
+Words that starts with a vowel:
+apple ear orange
