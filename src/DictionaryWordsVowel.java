@@ -9,21 +9,21 @@ public class DictionaryWordsVowel {
         String [] strArr = str.split(" ");
         System.out.println("Original order: \n" + str);
 
-        /**Bubble sort:
+        /**Bubble sort: 
          * Start with an outer loop to compare the string at index[i] to the rest of the array.
          */
-        for (int i = 0; i < strArr.length -1; i++) {
+        for (int i = 1; i < strArr.length ; i++) {
             // create an inner loop to iterate while comparing with string at index i
-            for (int j = i + 1; j < strArr.length; j++) {
+            for (int j = 0; j < strArr.length - 1; j++) {
                 /**Swap:
-                 * If need to swap: store array[i] in temporary variable
-                 * then replace array[i] with array[j]
-                 * then replace array[j] with the temporary variable
+                 * If need to swap: store array[j] in temporary variable
+                 * then replace array[j] with array[j + 1]
+                 * then replace array[j+1] with the temporary variable
                  */
-                if (strArr[i].compareToIgnoreCase(strArr[j]) > 0) {
-                    String hold = strArr[i];
-                    strArr[i] = strArr[j];
-                    strArr[j] = hold;
+                if (strArr[j].compareToIgnoreCase(strArr[j + 1]) > 0) {
+                    String hold = strArr[j];
+                    strArr[j] = strArr[j + 1];
+                    strArr[j+1] = hold;
                 }
             }
         }
